@@ -8,7 +8,7 @@ const Footer = () => {
 				</div>
 				<div className='flex justify-between flex-col md:flex-row flex-wrap w-[55%] items-center lg:items-start md:text-left text-center mt-1 sm:mt-8'>
 					<div className="w-full md:w-[50%] lg:w-[28%]">
-						<h1 class="title-font font-bold text-black tracking-widest text-2xl mb-3">Socials</h1>
+						<h1 class="title-font font-bold text-black  text-2xl mb-3">Socials</h1>
 						<nav class="list-none mb-10">
 							<li>
 								<a class="text-black font-medium">Instagram</a>
@@ -22,7 +22,7 @@ const Footer = () => {
 						</nav>
 					</div>
 					<div className="w-full md:w-[50%] lg:w-[28%]">
-						<h1 class="title-font font-bold text-black tracking-widest text-2xl mb-3">Navigation</h1>
+						<h1 class="title-font font-bold text-black  text-2xl mb-3">Navigation</h1>
 						<nav class="list-none mb-10">
 							<li>
 								<a class="text-black font-medium">About Us</a>
@@ -36,7 +36,7 @@ const Footer = () => {
 						</nav>
 					</div>
 					<div className="w-full md:w-[50%] lg:w-[28%]">
-						<h1 class="title-font font-bold text-black tracking-widest text-2xl mb-3">Contact Us</h1>
+						<h1 class="title-font font-bold text-black text-2xl mb-3">Contact Us</h1>
 						<nav class="list-none mb-10">
 							<li>
 								<a class="text-black font-medium text-lg">questions@freyhacks.email</a>
