@@ -3,7 +3,7 @@ import React from 'react';
 const Info = () => {
   return (
     <div className='w-[70%] py-4'>
-			<div className='w-full h-48 flex flex-col lg:flex-row items-center mb-40'>
+			<div className='w-full min-h-40 flex flex-col lg:flex-row items-center mb-40'>
 				<div className='w-[300px] h-40 bg-gray-500 mb-10 lg:mr-20 flex-none'>
 
 				</div>
