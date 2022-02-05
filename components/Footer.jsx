@@ -36,7 +36,7 @@ const Footer = () => {
 							<a className="text-black font-medium">About Us</a>
 						</li>
 						<li>
-							<a className="text-black font-medium">Sponsers</a>
+							<a className="text-black font-medium">Sponsors</a>
 						</li>
 						<li>
 							<a className="text-black font-medium">Privacy Policy</a>
