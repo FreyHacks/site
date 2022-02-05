@@ -2,9 +2,9 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className='w-full my-3 sm:my-8'>
-			<div className='flex flex-col lg:flex-row justify-between items-center'>
-				<div className='w-[70%] lg:w-[40%] flex-col sm:flex lg:flex-col items-center'>
+    <div className='w-full my-3 sm:my-1'>
+			<div className='flex flex-col lg:flex-row justify-around items-center'>
+				<div className='w-[70%] lg:w-[40%] flex flex-col sm:flex-row lg:flex-col items-center lg:ml-4 lg:-mt-28'>
 					<svg width="100%" height="268" viewBox="0 0 411 268" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.4" d="M197.5 211C246.377 211 286 171.377 286 122.5C286 73.6228 246.377 34 197.5 34C148.623 34 109 73.6228 109 122.5C109 171.377 148.623 211 197.5 211Z" fill="#FFCF68"/>
 <path opacity="0.2" d="M197 268C271.006 268 331 208.006 331 134C331 59.9939 271.006 0 197 0C122.994 0 63 59.9939 63 134C63 208.006 122.994 268 197 268Z" fill="#F0B16A"/>
@@ -37,12 +37,12 @@ const Hero = () => {
 </linearGradient>
 </defs>
 					</svg>
-					<button className='bg-gradient-to-b from-[#5BA558] to-[#83C280] w-64 sm:w-[300px] h-20 rounded-3xl sm:mt-10 text-3xl text-white font-extrabold'>
+					<button className='bg-gradient-to-b from-[#5BA558] to-[#83C280] w-64 sm:w-[300px] h-20 rounded-3xl lg:mt-10 text-3xl text-white font-extrabold'>
 						Register
 					</button>
 				</div>
-				<div className='-mt-28  -mb-[370px] sm:-mb-[200px] lg:mt-3 sm:mt-10 flex flex-col items-center'>
-					<svg width="90%" height="711" viewBox="0 0 650 711" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div className='sm:h-[500px] w-[60%] mt-10 lg:mt-3 sm:ml-12 flex flex-col items-end justify-end'>
+					<svg className='w-full'  viewBox="0 0 650 711" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="191.482" y1="70.8656" x2="325.482" y2="550.866" stroke="white"/>
 <line x1="185.312" y1="439.61" x2="320.312" y2="547.61" stroke="white"/>
 <line x1="513.47" y1="75.1708" x2="340.47" y2="551.171" stroke="white"/>
@@ -102,7 +102,7 @@ const Hero = () => {
 					</svg>
 				</div>
 			</div>
-			<div className='-ml-40'>
+			<div className='-ml-40 -mt-[200px]'>
 				<svg width="130%"  height="396" viewBox="0 0 1965 396" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M272.758 117C300.114 117 326.738 144.883 365.519 147.1C404.301 149.317 425.255 117 492.828 117C560.402 117 558.735 145.825 600 147.1C641.265 148.375 665.649 117 728.588 117C791.528 117 800.838 144.727 836.217 147.1C871.597 149.472 905.833 117.888 927.242 117.888C948.65 117.888 967 138.487 967 164.075V213.814C967 239.401 949.268 260 927.242 260H272.758C250.732 260 233 239.401 233 213.814V164.075C233 138.487 245.403 117 272.758 117V117Z" fill="#55ACEE"/>
 <path d="M911.853 148.183C871.655 174.097 805.207 145.86 814.175 105.327C822.037 69.7964 864.244 80.008 873.845 84.8028C883.44 89.5977 877.635 64.1297 855.372 56.4856C825.216 46.1358 788.298 48.3259 776.635 100.341C768.661 135.888 784.274 185.723 844.241 186.388C904.214 187.052 911.853 148.183 911.853 148.183Z" fill="#226699"/>

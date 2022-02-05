@@ -6,7 +6,11 @@ module.exports = {
   ],
   darkmode: true,
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'faq-svg': "url('/faq-svg.svg')",
+      }
+    },
   },
   plugins: [],
 }
