@@ -2,7 +2,7 @@ import React from 'react';
 
 const Events = () => {
   return (
-    <div className='w-full flex flex-col items-center mt-40'>
+    <div id='schedule' className='w-full flex flex-col items-center mt-40'>
       <div className=' flex flex-row-reverse sm:flex-row items-center m-0 sm:-ml-20 px-9'>
         <div className='w-32 h-32 -ml-10 sm:ml-0 sm:mr-4'>
           <svg width="154" height="167" viewBox="0 0 154 167" fill="none" xmlns="http://www.w3.org/2000/svg">

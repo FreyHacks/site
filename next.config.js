@@ -4,4 +4,7 @@ module.exports = {
     loader: 'akamai',
     path: '',
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }

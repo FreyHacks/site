@@ -1,5 +1,5 @@
 import React from 'react';
-
+import data from "../lib/footer"
 const Footer = () => {
 	return (
 		<footer className=' w-full pt-6 flex justify-around items-center flex-col md:flex-row text-black font-sans bg-white body-font text-xl'>
@@ -18,37 +18,26 @@ const Footer = () => {
 				<div className="w-full md:w-[50%] lg:w-[28%]">
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Socials</h1>
 					<nav className="list-none mb-10">
-						<li>
-							<a className="text-black font-medium">Instagram</a>
-						</li>
-						<li>
-							<a className="text-black font-medium">LinkedIn</a>
-						</li>
-						<li>
-							<a className="text-black font-medium">Facebook</a>
-						</li>
+						{data.socials.map(a=><li>
+							<a href={a.link} className="text-black font-medium">{a.name}</a>
+						</li>)}
+						
 					</nav>
 				</div>
 				<div className="w-full md:w-[50%] lg:w-[28%]">
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Navigation</h1>
 					<nav className="list-none mb-10">
-						<li>
-							<a className="text-black font-medium">About Us</a>
-						</li>
-						<li>
-							<a className="text-black font-medium">Sponsors</a>
-						</li>
-						<li>
-							<a className="text-black font-medium">Privacy Policy</a>
-						</li>
+					{data.nav.map(a=><li>
+							<a href={a.link} className="text-black font-medium">{a.name}</a>
+						</li>)}
 					</nav>
 				</div>
 				<div className="w-full md:w-[50%] lg:w-[28%]">
 					<h1 className="title-font font-bold text-black text-2xl mb-3">Contact Us</h1>
 					<nav className="list-none mb-10">
-						<li>
-							<a className="text-black font-medium text-lg">questions@freyhacks.email</a>
-						</li>
+						{data.contact.map(a=><li>
+							<a  className="text-black font-medium text-xl">{a}</a>
+						</li>)}
 					</nav>
 				</div>
 			</div>

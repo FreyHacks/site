@@ -7,7 +7,7 @@ import Faq from './Faq';
 import Hero from './Hero';
 const Main = () => {
   return( 
-      <div className='bg-transparent h-full w-full flex flex-col items-center pt-3 sm:pt-10'>
+      <div className=' bg-transparent subpixel-antialiased h-full w-full flex flex-col items-center pt-0 sm:pt-10'>
         <Hero/>
         <Info/>
         <Events/>
