@@ -2,7 +2,7 @@ import React from 'react';
 
 const Info = () => {
   return (
-    <div className='w-[70%] -mt-10 sm:mt-20 py-4'>
+    <div id='about' className='w-[70%] mt-10 sm:mt-20 py-4'>
 		<div className='w-full min-h-40 flex flex-col lg:flex-row items-center mb-12'>
 			<div className='w-[300px] h-[280px]  mb-10 lg:mr-16 flex-none'>
 				<svg width="288" height="254" viewBox="0 0 288 254" fill="none" xmlns="http://www.w3.org/2000/svg">
