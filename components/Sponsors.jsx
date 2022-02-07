@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sponsors = () => {
   return (
-    <div className='mt-64 w-full flex flex-col relative '>
+    <div id='sponsors' className='mt-64 w-full flex flex-col relative '>
 			<div className='w-full'>
 				<svg className='w-[140%] -ml-28 sm:ml-0 sm:w-full'  viewBox="0 0 1440 279" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fillRule="evenodd" clipRule="evenodd" d="M881.472 205.609C757.476 159.325 591.01 131 408 131C255.516 131 114.517 150.664 0 183.996V279H745.513H1021.95H1440V167.974C1374.49 155.091 1302.94 148 1228 148C1097.55 148 977.365 169.486 881.472 205.609Z" fill="#FFD566"/>
