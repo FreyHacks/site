@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Faq = () => {
+	const a=[1,2,3,4,5,6,7]
   return (
-    <div>
-			<div className=' z-0 flex flex-col items-center sm:-ml-20'>
-			<svg width="2142" height="1107" viewBox="0 0 2142 1107" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<div className='w-full relative z-1 flex flex-col items-center -mt-10 sm:-mt-40'>
+			<svg className="min-w-[500%] md:min-w-[120%] z-99"  viewBox="0 0 2142 1107" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1821.49 36.4692L1125.31 886.722L1157.09 916.561L1934.12 142.227L1821.49 36.4692Z" fill="url(#paint0_linear_241_125)" fill-opacity="0.98"/>
 <path d="M359.277 39.0728L1060.52 894.722L1028.74 924.56L246.646 144.83L359.277 39.0728Z" fill="url(#paint1_linear_241_125)" fill-opacity="0.98"/>
 <path d="M71.1634 467L1073.78 939.349L1053.7 994.383L8.60653e-07 662.059L71.1634 467Z" fill="url(#paint2_linear_241_125)" fill-opacity="0.98"/>
@@ -48,15 +48,24 @@ const Faq = () => {
 <stop offset="1" stop-color="#55ACEE"/>
 </linearGradient>
 </defs>
-</svg>
+			</svg>
 
-				<div className='z-100  w-full flex flex-col items-center'>
-					<div className='bg-red-400/20 w-3/4 h-64'>
-
-					</div>
+			<div className='z-100 absolute top-10 sm:top-20 w-full flex flex-col items-center'>
+				<p className='text-3xl sm:text-5xl text-center font-bold py-8 sm:py-20'>Frequently Asked Questions</p>
+				<div className='bg-white/25 w-[90%] border-t-[1.5px] border-black flex flex-col items-center'>
+					{a.map(A=><details className='w-full text-lg sm:text-xl border-b-[1.5px] border-black px-8 '>
+						<summary className='sm:text-2xl py-10 flex justify-between items-center'>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.9584 13.2918H15.7084V6.04183C15.7084 5.72136 15.5811 5.41402 15.3545 5.18741C15.1279 4.9608 14.8205 4.8335 14.5 4.8335C14.1796 4.8335 13.8722 4.9608 13.6456 5.18741C13.419 5.41402 13.2917 5.72136 13.2917 6.04183V13.2918H6.04171C5.72124 13.2918 5.41389 13.4191 5.18729 13.6457C4.96068 13.8723 4.83337 14.1797 4.83337 14.5002C4.83337 14.8206 4.96068 15.128 5.18729 15.3546C5.41389 15.5812 5.72124 15.7085 6.04171 15.7085H13.2917V22.9585C13.2917 23.279 13.419 23.5863 13.6456 23.8129C13.8722 24.0395 14.1796 24.1668 14.5 24.1668C14.8205 24.1668 15.1279 24.0395 15.3545 23.8129C15.5811 23.5863 15.7084 23.279 15.7084 22.9585V15.7085H22.9584C23.2788 15.7085 23.5862 15.5812 23.8128 15.3546C24.0394 15.128 24.1667 14.8206 24.1667 14.5002C24.1667 14.1797 24.0394 13.8723 23.8128 13.6457C23.5862 13.4191 23.2788 13.2918 22.9584 13.2918Z" fill="black"/>
+							</svg>
+						</summary>
+						<div className='pb-8'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ut dolor vitae dignissimos earum delectus exercitationem, consequatur, saepe voluptatibus praesentium aperiam quisquam deleniti commodi dolorum adipisci iste consectetur totam. Quis.
+						</div>
+					</details>)}
 				</div>
 			</div>
-    </div>
+		</div>
   );
 };
 
