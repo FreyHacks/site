@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Hero = () => {
+
   return (
     <div id='home' className='w-full mt-1 mb-3 sm:my-1'>
 			<div className='flex flex-col lg:flex-row justify-around items-center'>
@@ -129,6 +130,26 @@ const Hero = () => {
 </linearGradient>
 </defs>
 				</svg>
+			</div>
+			<div className='w-full flex flex-col items-center text-white'>
+				<p className='text-5xl font-bold text-center py-8'>Countdown</p>
+				<div className='border-white border-2 h-32 w-1/2 flex items-center justify-between px-8  font-medium'>
+					<div className='flex flex-col items-center'>
+						<p className='text-5xl'>12</p>
+						<p className='text-3xl'>days</p>
+					</div>
+					<p className='text-5xl'> : </p>
+					<div className='flex flex-col items-center'>
+						<p className='text-5xl'>12</p>
+						<p className='text-3xl'>hours</p>
+					</div>
+					<p className='text-5xl'> : </p>
+
+					<div className='flex flex-col items-center'>
+						<p className='text-5xl'>12</p>
+						<p className='text-3xl'>minutes</p>
+					</div>
+				</div>
 			</div>
     </div>
   );
