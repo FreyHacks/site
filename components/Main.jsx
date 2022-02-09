@@ -8,7 +8,7 @@ import Hero from './Hero';
 import { Element } from 'react-scroll';
 const Main = () => {
   return( 
-      <div className=' bg-transparent subpixel-antialiased h-full w-full flex flex-col items-center pt-0 sm:pt-10'>
+      <div className=' bg-transparent subpixel-antialiased h-full w-full mt-14 sm:mt-0 flex flex-col items-center pt-0 sm:pt-10'>
         <Element name='home' className='w-full flex-col flex items-center'><Hero/></Element>
         <Element name='about' className='w-full flex-col flex items-center'><Info/></Element>
         <Element name='events' className='w-full flex-col flex items-center'> <Events/></Element>
