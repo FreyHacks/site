@@ -11,6 +11,7 @@ const Nav = () => {
       smooth: true,
       containerId:'contain'
     })
+    setopen(false);
   }
   return (
     <div className=' fixed sm:static w-full'>
@@ -27,8 +28,8 @@ const Nav = () => {
           </svg>
         </div>
         <nav className="md:flex w-[70%] md:w-[60%] lg:w-[45%] hidden  justify-between items-center font-semibold text-2xl align-middle">
-          <span onClick={()=>handle("home")} href='#home' className="text-black  w-20">Home</span>
-          <span onClick={()=>handle("about")} href='#about' className="text-black  w-20">About</span>
+          <span onClick={()=>handle("home")} className="text-black  w-20">Home</span>
+          <span onClick={()=>handle("about")} className="text-black  w-20">About</span>
           <span onClick={()=>handle("events")} className="text-black  w-24">Schedule</span>
           <button className=' bg-gradient-to-b from-[#66AD63] to-[#7FC07C]  text-medium font-medium  text-white rounded-2xl py-2 px-4 lg:px-7'>Register</button>
         </nav>
@@ -40,9 +41,9 @@ const Nav = () => {
           </svg>
         </div >
         <nav className={'bg-white text-center text-black text-xl font-medium absolute top-20 right-0 flex py-4 items-center justify-around w-full '+(open?' block ':' hidden')}>
-          <a href='#home' >Home</a>
-          <a href='#about' >About</a>
-          <a href='#schedule' >Schedule</a>
+          <span onClick={()=>handle("home")} >Home</span>
+          <span onClick={()=>handle("about")} >About</span>
+          <span onClick={()=>handle("events")} >Schedule</span>
         </nav>
       </div>
     </div>
