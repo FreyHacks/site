@@ -1,18 +1,9 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Timer from "./Timer";
 
 const Hero = () => {
-	let a
-  useEffect(() => {
-    var t1 = new Date();
-    var t2 = new Date(2022,7,15, 0, 0, 0, 0);
-    var dif = t1.getTime() - t2.getTime();
-    var Seconds_from_T1_to_T2 = dif / 1000;
-    var Seconds_Between_Dates = Math.round(Math.abs(Seconds_from_T1_to_T2));
-    a=Seconds_Between_Dates
-		console.log(a)
-  }, []);
+
   return (
     <div id='home' className='w-full mt-1 mb-3 sm:my-1'>
 			<div className='flex flex-col lg:flex-row justify-around items-center'>
@@ -143,7 +134,7 @@ const Hero = () => {
 	</defs>
 					</svg>
 				</div>
-				<Timer a={a}/>
+				<Timer/>
 			</div>
 			
     </div>
