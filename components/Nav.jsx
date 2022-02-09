@@ -13,7 +13,7 @@ const Nav = () => {
     })
   }
   return (
-    <div className=' fixed sm:block w-full'>
+    <div className=' fixed sm:static w-full'>
       <div className='bg-white relative w-full flex justify-between items-center pr-8 py-1 sm:py-3'>
         <div className='w-[50%] md:w-[40%] my-2 sm:my-0 flex pl-5 items-center justify-start '>
           <svg width="300" height="60" viewBox="0 0 319 73" fill="none" xmlns="http://www.w3.org/2000/svg">
