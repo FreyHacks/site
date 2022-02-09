@@ -1,6 +1,16 @@
 import React from 'react';
 import data from "../lib/footer"
+import { scroller } from 'react-scroll';
 const Footer = () => {
+	const handle=(a,b)=>{
+    scroller.scrollTo(a, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      containerId:'contain',
+			offset: a==='sponsors' ? 400 : 50,
+    })
+  }
 	return (
 		<footer className=' w-full pt-6 flex justify-around items-center flex-col md:flex-row text-black font-sans bg-white body-font text-xl'>
 			<div className='w-[80%] md:w-[30%] lg:w-[20%] mt-6 mb-4 sm:my-1 flex flex-col items-center'>
@@ -28,7 +38,7 @@ const Footer = () => {
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Navigation</h1>
 					<nav className="list-none mb-10">
 					{data.nav.map(a=><li>
-							<a href={a.link} className="text-black font-medium">{a.name}</a>
+							<span onClick={()=>handle(a.link,a.offset)} className="text-black font-medium">{a.name}</span>
 						</li>)}
 					</nav>
 				</div>
@@ -36,7 +46,7 @@ const Footer = () => {
 					<h1 className="title-font font-bold text-black text-2xl mb-3">Contact Us</h1>
 					<nav className="list-none mb-10">
 						{data.contact.map(a=><li>
-							<a  className="text-black font-medium text-xl">{a}</a>
+							<a  className="text-black text-center font-medium text-xl">{a}</a>
 						</li>)}
 					</nav>
 				</div>

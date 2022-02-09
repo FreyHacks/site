@@ -19,3 +19,16 @@ a {
   box-sizing: border-box;
 }
 
+
+
+@media (min-width: 1024px){
+  .lg\:flex-row-reverse {
+      flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1024px){
+  .text-right{
+    text-align: right;
+  }
+}

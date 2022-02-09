@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
+import {scroller} from 'react-scroll';
 
 const Nav = () => {
   const [open, setopen] = useState(false);
+  const handle=(a)=>{
+    console.log(1)
+    scroller.scrollTo(a, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      containerId:'contain'
+    })
+  }
   return (
     <div className=' sticky sm:block '>
       <div className='bg-white relative w-full flex justify-between items-center pr-8 py-1 sm:py-3'>
@@ -17,9 +27,9 @@ const Nav = () => {
           </svg>
         </div>
         <nav className="md:flex w-[70%] md:w-[60%] lg:w-[45%] hidden  justify-between items-center font-semibold text-2xl align-middle">
-          <a href='#home' className="text-black  w-20">Home</a>
-          <a href='#about' className="text-black  w-20">About</a>
-          <a href='#schedule' className="text-black  w-24">Schedule</a>
+          <span onClick={()=>handle("home")} href='#home' className="text-black  w-20">Home</span>
+          <span onClick={()=>handle("about")} href='#about' className="text-black  w-20">About</span>
+          <span onClick={()=>handle("events")} className="text-black  w-24">Schedule</span>
           <button className=' bg-gradient-to-b from-[#66AD63] to-[#7FC07C]  text-medium font-medium  text-white rounded-2xl py-2 px-4 lg:px-7'>Register</button>
         </nav>
         <div onClick={()=>setopen(!open)} className='block md:hidden h-10 w-10 '>
@@ -29,7 +39,7 @@ const Nav = () => {
         <rect y="60" width="100" height="20"></rect>
           </svg>
         </div >
-        <nav className={'bg-white text-center text-black text-2xl font-medium absolute top-20 right-0 flex py-4 items-center justify-around w-full '+(open?' block ':' hidden')}>
+        <nav className={'bg-white text-center text-black text-xl font-medium absolute top-20 right-0 flex py-4 items-center justify-around w-full '+(open?' block ':' hidden')}>
           <a href='#home' >Home</a>
           <a href='#about' >About</a>
           <a href='#schedule' >Schedule</a>
