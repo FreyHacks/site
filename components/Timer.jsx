@@ -1,16 +1,18 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import { useTimer } from  "reactjs-countdown-hook";
 
+const d=()=>{
+  var t1 = new Date();
+  var t2 = new Date(2022,7,15, 0, 0, 0, 0);
+  var dif = t1.getTime() - t2.getTime();
+  var Seconds_from_T1_to_T2 = dif / 1000;
+  return Math.round(Math.abs(Seconds_from_T1_to_T2));
+}
+const a=d();
+
 const timer = () => {
-  const d=()=>{
-    var t1 = new Date();
-    var t2 = new Date(2022,7,15, 0, 0, 0, 0);
-    var dif = t1.getTime() - t2.getTime();
-    var Seconds_from_T1_to_T2 = dif / 1000;
-    return Math.round(Math.abs(Seconds_from_T1_to_T2));
-  }
   
-  const{days,minutes,hours} = useTimer(d())
+  const{days,minutes,hours} = useTimer(a)
   return( 
     <div className='w-full flex flex-col items-center text-white -ml-[100%] mt-16'>
     <p className='text-4xl md:text-5xl font-bold text-center py-2 md:py-4'>Countdown</p>
