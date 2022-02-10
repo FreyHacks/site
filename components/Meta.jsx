@@ -10,7 +10,7 @@ const Meta = () => {
         <meta name='robots' content='all' />
         <meta property="og:site_name" content="FreyHacks" />
         <meta property="og:url" content="https://freyhacks.tech/" />
-        <meta property="og:image" content="https://freyhacks.tech/logo.png" />
+        <meta property="og:image" content="https://freyhacks1.netlify.app/logo.png" />
         <meta property="og:description" content="DESCRIPTION OF PAGE CONTENT" />
         <meta property="og:title" content="Frehacks" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
