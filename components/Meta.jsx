@@ -4,7 +4,7 @@ import Head from "next/head";
 const Meta = () => {
   return (
     <Head>
-        <meta charset="UTF-8" lang='en' />
+        <meta charSet="UTF-8" lang='en' />
         <meta name="keywords" content="hackathon, students, technology, mlh" />
         <link rel="canonical" href="https://freyhacks.tech/" />
         <meta name='robots' content='all' />
