@@ -29,7 +29,7 @@ const Footer = () => {
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Socials</h1>
 					<nav className="list-none mb-10">
 						{data.socials.map(a=><li key={a.name}>
-							<a href={a.link} className="text-black font-medium">{a.name}</a>
+							<a href={a.link} className="hover:cursor-pointer text-black font-medium">{a.name}</a>
 						</li>)}
 						
 					</nav>
@@ -38,7 +38,7 @@ const Footer = () => {
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Navigation</h1>
 					<nav className="list-none mb-10">
 					{data.nav.map(a=><li key={a.name}>
-							<span onClick={()=>handle(a.link,a.offset)} className="text-black font-medium">{a.name}</span>
+							<span onClick={()=>handle(a.link,a.offset)} className="hover:cursor-pointer text-black font-medium">{a.name}</span>
 						</li>)}
 					</nav>
 				</div>

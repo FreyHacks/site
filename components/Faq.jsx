@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../lib/faq';
+import Bounce from 'react-reveal/Bounce';
 
 const Faq = () => {
 	const a=[1,2,3,4,5,6,7]
@@ -56,6 +57,7 @@ const Faq = () => {
 			<div className='z-100 -ml-[100%] w-full flex flex-col items-center pt-20 pb-10 '>
 				<p className='text-3xl sm:text-5xl text-center font-bold py-8 sm:py-20'>Frequently Asked Questions</p>
 				<div   className='bg-white/25 w-[90%] border-t-[1.5px] border-black flex flex-col items-center'>
+				<Bounce left>
 					{data.map(a=><details key={a.head} className='w-full text-lg sm:text-xl border-b-[1.5px] border-black px-8 '>
 						<summary className='sm:text-2xl py-10 flex justify-between items-center'>
 							<p>{a.head}</p>
@@ -65,6 +67,7 @@ const Faq = () => {
 						</summary>
 						<div className='pb-8'>{a.info}</div>
 					</details>)}
+					</Bounce>
 				</div>
 			</div>
 		</div>

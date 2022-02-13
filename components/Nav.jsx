@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Fade } from 'react-reveal';
 import {scroller} from 'react-scroll';
 
 const Nav = () => {
@@ -14,7 +15,8 @@ const Nav = () => {
     setopen(false);
   }
   return (
-    <div data-aos="fade-down" className='z-99999 fixed sm:static w-full'>
+    <Fade  top>
+    <div data-sal="slide-down" className='z-99999 fixed sm:static w-full'>
       <div className='bg-white relative w-full flex justify-between items-center pr-8 py-1 sm:py-3'>
         <div className='w-[50%] md:w-[40%] my-2 sm:my-0 flex pl-5 items-center justify-start '>
           <svg width="300" height="60" viewBox="0 0 319 73" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,17 +30,15 @@ const Nav = () => {
           </svg>
         </div>
         <nav className="md:flex w-[70%] md:w-[60%] lg:w-[45%] hidden  justify-between items-center font-semibold text-2xl align-middle">
-          <span onClick={()=>handle("home")} className="text-black  w-20">Home</span>
-          <span onClick={()=>handle("about")} className="text-black  w-20">About</span>
-          <span onClick={()=>handle("events")} className="text-black  w-24">Schedule</span>
+          <span onClick={()=>handle("home")} className="text-black hover:cursor-pointer  w-20">Home</span>
+          <span onClick={()=>handle("about")} className="text-black hover:cursor-pointer  w-20">About</span>
+          <span onClick={()=>handle("events")} className="text-black  hover:cursor-pointer w-24">Schedule</span>
           <button className=' bg-gradient-to-b from-[#66AD63] to-[#7FC07C]  text-medium font-medium  text-white rounded-2xl py-2 px-4 lg:px-7'>Register</button>
         </nav>
         <div onClick={()=>setopen(!open)} className='block md:hidden h-10 w-10 '>
-          <svg viewBox="0 0 100 80" width="40" height="40">
-        <rect width="100" height="20"></rect>
-        <rect y="30" width="100" height="20"></rect>
-        <rect y="60" width="100" height="20"></rect>
-          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/>
+        </svg>
         </div >
         <nav className={'bg-white text-center text-black text-xl font-medium absolute top-20 right-0 flex py-4 items-center justify-around w-full '+(open?' block ':' hidden')}>
           <span onClick={()=>handle("home")} >Home</span>
@@ -47,6 +47,7 @@ const Nav = () => {
         </nav>
       </div>
     </div>
+    </Fade>
   );
 };
 

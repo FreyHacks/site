@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Fade } from 'react-reveal';
 import Timer from "./Timer";
 
 const Hero = () => {
@@ -7,7 +8,8 @@ const Hero = () => {
   return (
     <div id='home' className='w-full mt-1 mb-3 sm:my-1'>
 			<div className='flex flex-col lg:flex-row justify-around items-center'>
-				<div data-aos="fade-right" className='w-[70%] lg:w-[40%] flex flex-col sm:flex-row lg:flex-col items-center lg:ml-4 lg:-mt-28'>
+				<Fade wait='100' left>
+				<div  className='w-[70%] lg:w-[40%] flex flex-col sm:flex-row lg:flex-col items-center lg:ml-4 lg:-mt-28'>
 					<svg width="100%" height="268" viewBox="0 0 411 268" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.4" d="M197.5 211C246.377 211 286 171.377 286 122.5C286 73.6228 246.377 34 197.5 34C148.623 34 109 73.6228 109 122.5C109 171.377 148.623 211 197.5 211Z" fill="#FFCF68"/>
 <path opacity="0.2" d="M197 268C271.006 268 331 208.006 331 134C331 59.9939 271.006 0 197 0C122.994 0 63 59.9939 63 134C63 208.006 122.994 268 197 268Z" fill="#F0B16A"/>
@@ -44,6 +46,7 @@ const Hero = () => {
 						Register
 					</button>
 				</div>
+				</Fade>
 				<div className='sm:h-[700px] w-[75%] mt-10 lg:mt-3 sm:ml-20 flex flex-col items-end justify-end'>
 					<svg className='w-full'  viewBox="0 0 650 711" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="191.482" y1="70.8656" x2="325.482" y2="550.866" stroke="white"/>
@@ -105,9 +108,9 @@ const Hero = () => {
 					</svg>
 				</div>
 			</div>
-			<div className='w-full -mt-[25%] sm:-mt-[14%]  flex items-center'>
+			<div className='w-full -mt-[25%] md:-mt-[150px] lg:-mt-[14%]  flex items-center'>
 				<div className='w-full'>
-					<svg className='w-[230%] md:w-[110%]' viewBox="0 0 1440 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg className='w-[230%] md:w-[130%] lg:w-[110%]' viewBox="0 0 1440 396" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path fillRule="evenodd" clipRule="evenodd" d="M0 262H560.242C582.268 262 600 241.401 600 215.814V166.075C600 140.487 581.65 119.888 560.242 119.888C551.207 119.888 539.887 125.513 527.161 131.838C509.733 140.499 489.666 150.471 469.217 149.1C454.653 148.123 444.506 142.849 433.218 136.982C417.084 128.597 398.618 119 361.588 119C327.381 119 304.562 128.268 284.233 136.524C267.157 143.46 251.837 149.682 233 149.1C215.177 148.549 205.363 142.859 194.519 136.571C180.257 128.302 164.215 119 125.828 119C88.4234 119 65.3034 128.902 45.5371 137.368C30.0517 144 16.6247 149.751 0 149.168V262Z" fill="#55ACEE"/>
 	<path d="M138.758 117C166.114 117 192.738 144.883 231.519 147.1C270.301 149.317 291.255 117 358.828 117C426.402 117 424.735 145.825 466 147.1C507.265 148.375 531.649 117 594.588 117C657.528 117 666.838 144.727 702.217 147.1C737.597 149.472 771.833 117.888 793.242 117.888C814.65 117.888 833 138.487 833 164.075V213.814C833 239.401 815.268 260 793.242 260H138.758C116.732 260 99 239.401 99 213.814V164.075C99 138.487 111.403 117 138.758 117V117Z" fill="#55ACEE"/>
 	<path d="M777.853 148.183C737.655 174.097 671.207 145.86 680.175 105.327C688.037 69.7963 730.244 80.0079 739.845 84.8028C749.44 89.5976 743.635 64.1297 721.372 56.4856C691.216 46.1357 654.298 48.3258 642.635 100.341C634.661 135.888 650.274 185.723 710.241 186.388C770.214 187.052 777.853 148.183 777.853 148.183Z" fill="#226699"/>

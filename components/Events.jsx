@@ -1,7 +1,9 @@
 import React from 'react';
+import { Zoom } from 'react-reveal';
 
 const Events = () => {
   return (
+    <Zoom   >
     <div id='schedule' className='w-full flex flex-col items-center mt-40'>
       <div className=' flex flex-row-reverse sm:flex-row items-center m-0 sm:-ml-20 px-9'>
         <div className='w-32 h-32 -ml-10 sm:ml-0 sm:mr-4'>
@@ -19,6 +21,7 @@ const Events = () => {
 
       </div>
     </div>
+    </Zoom>
   );
 };
 
