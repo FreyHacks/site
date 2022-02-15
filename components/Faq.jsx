@@ -5,7 +5,7 @@ import Bounce from 'react-reveal/Bounce';
 const Faq = () => {
 	const a=[1,2,3,4,5,6,7]
   return (
-		<div className='w-full flex   -mt-10 sm:-mt-40'>
+		<div className=' w-full flex   -mt-10 sm:-mt-40'>
 			<div className='w-full flex flex-col items-center'>
 				<svg className="w-[500%] md:w-[200%] z-99"  viewBox="0 0 2142 1107" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path d="M1821.49 36.4692L1125.31 886.722L1157.09 916.561L1934.12 142.227L1821.49 36.4692Z" fill="url(#paint0_linear_241_125)" fillOpacity="0.98"/>
@@ -54,10 +54,10 @@ const Faq = () => {
 				</svg>
 			</div>
 
-			<div className='z-100 -ml-[100%] w-full flex flex-col items-center pt-20 pb-10 '>
+			<div className=' -ml-[100%] w-full flex flex-col items-center pt-20 pb-10 '>
 				<p className='text-3xl sm:text-5xl text-center font-bold py-8 sm:py-20'>Frequently Asked Questions</p>
 				<div   className='bg-white/25 w-[90%] border-t-[1.5px] border-black flex flex-col items-center'>
-				<Bounce left>
+				<Bounce left >
 					{data.map(a=><details key={a.head} className='w-full text-lg sm:text-xl border-b-[1.5px] border-black px-8 '>
 						<summary className='sm:text-2xl py-10 flex justify-between items-center'>
 							<p>{a.head}</p>

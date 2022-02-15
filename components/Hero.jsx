@@ -1,14 +1,13 @@
-
 import React from 'react';
 import { Fade } from 'react-reveal';
 import Timer from "./Timer";
 
 const Hero = () => {
-
+	
   return (
+		<Fade left>
     <div id='home' className='w-full mt-1 mb-3 sm:my-1'>
 			<div className='flex flex-col lg:flex-row justify-around items-center'>
-				<Fade wait='100' left>
 				<div  className='w-[70%] lg:w-[40%] flex flex-col sm:flex-row lg:flex-col items-center lg:ml-4 lg:-mt-28'>
 					<svg width="100%" height="268" viewBox="0 0 411 268" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.4" d="M197.5 211C246.377 211 286 171.377 286 122.5C286 73.6228 246.377 34 197.5 34C148.623 34 109 73.6228 109 122.5C109 171.377 148.623 211 197.5 211Z" fill="#FFCF68"/>
@@ -46,7 +45,6 @@ const Hero = () => {
 						Register
 					</button>
 				</div>
-				</Fade>
 				<div className='sm:h-[700px] w-[75%] mt-10 lg:mt-3 sm:ml-20 flex flex-col items-end justify-end'>
 					<svg className='w-full'  viewBox="0 0 650 711" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="191.482" y1="70.8656" x2="325.482" y2="550.866" stroke="white"/>
@@ -141,6 +139,7 @@ const Hero = () => {
 			</div>
 			
     </div>
+	</Fade>
   );
 };
 

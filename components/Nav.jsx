@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Fade } from 'react-reveal';
 import {scroller} from 'react-scroll';
 
 const Nav = () => {
@@ -15,8 +14,7 @@ const Nav = () => {
     setopen(false);
   }
   return (
-    <Fade  top>
-    <div data-sal="slide-down" className='z-99999 fixed sm:static w-full'>
+    <div  className='z-[99999] fixed sm:static w-full'>
       <div className='bg-white relative w-full flex justify-between items-center pr-8 py-1 sm:py-3'>
         <div className='w-[50%] md:w-[40%] my-2 sm:my-0 flex pl-5 items-center justify-start '>
           <svg width="300" height="60" viewBox="0 0 319 73" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +45,6 @@ const Nav = () => {
         </nav>
       </div>
     </div>
-    </Fade>
   );
 };
 
