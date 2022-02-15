@@ -39,7 +39,7 @@ const Hero = () => {
 </linearGradient>
 </defs>
 					</svg>
-					<button className='bg-gradient-to-b from-[#5BA558] to-[#83C280] w-64 sm:w-[300px] h-20 rounded-3xl lg:mt-10 text-3xl text-white font-extrabold'>
+					<button className='bg-gradient-to-b from-[#5BA558] hover:from-[#83C280] hover:to-[#5BA558] to-[#83C280] focus:ring-2 focus:ring-[#83C280] w-64 sm:w-[300px] h-20 rounded-3xl lg:mt-10 text-3xl text-white font-extrabold'>
 						Register
 					</button>
 				</div>

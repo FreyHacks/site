@@ -31,7 +31,7 @@ const Nav = () => {
           <span onClick={()=>handle("home")} className="text-black hover:cursor-pointer  w-20">Home</span>
           <span onClick={()=>handle("about")} className="text-black hover:cursor-pointer  w-20">About</span>
           <span onClick={()=>handle("events")} className="text-black  hover:cursor-pointer w-24">Schedule</span>
-          <button className=' bg-gradient-to-b from-[#66AD63] to-[#7FC07C]  text-medium font-medium  text-white rounded-2xl py-2 px-4 lg:px-7'>Register</button>
+          <button className=' bg-gradient-to-b from-[#5BA558] hover:from-[#83C280] hover:to-[#5BA558] to-[#83C280] focus:ring-2 focus:ring-[#83C280]  text-medium font-medium  text-white rounded-2xl py-2 px-4 lg:px-7'>Register</button>
         </nav>
         <div onClick={()=>setopen(!open)} className='block md:hidden h-10 w-10 '>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
