@@ -1,11 +1,9 @@
 import React from 'react';
-import { Fade } from 'react-reveal';
 import Timer from "./Timer";
 
 const Hero = () => {
 	
   return (
-		<Fade left>
     <div id='home' className='w-full mt-1 mb-3 sm:my-1'>
 			<div className='flex flex-col lg:flex-row justify-around items-center'>
 				<div  className='w-[70%] lg:w-[40%] flex flex-col sm:flex-row lg:flex-col items-center lg:ml-4 lg:-mt-28'>
@@ -139,7 +137,6 @@ const Hero = () => {
 			</div>
 			
     </div>
-	</Fade>
   );
 };
 
