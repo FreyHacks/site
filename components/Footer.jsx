@@ -27,12 +27,12 @@ const Footer = () => {
 			<div className='flex justify-between flex-col md:flex-row flex-wrap w-[55%] items-center lg:items-start md:text-left text-center mt-1 sm:mt-0'>
 				<div className="w-full md:w-[50%] lg:w-[28%]">
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Socials</h1>
-					<nav className="list-none mb-10">
+					<ul className="list-none mb-10">
 						{data.socials.map(a=><li key={a.name}>
 							<a href={a.link} className="hover:cursor-pointer text-black font-medium">{a.name}</a>
 						</li>)}
 						
-					</nav>
+					</ul>
 				</div>
 				<nav className="w-full md:w-[50%] lg:w-[28%]">
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Navigation</h1>
