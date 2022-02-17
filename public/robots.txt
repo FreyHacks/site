@@ -1,0 +1,4 @@
+sitemap: https://freyhacks1.netlify.app/
+
+User-agent: *
+Allow: /*
