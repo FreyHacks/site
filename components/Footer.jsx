@@ -36,7 +36,7 @@ const Footer = () => {
 				</div>
 				<nav className="w-full md:w-[50%] lg:w-[28%]">
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Navigation</h1>
-					<div className="list-none mb-10">
+					<div className="list-none mb-10 flex flex-col  ">
 					{data.nav.map(a=>
 							<span key={a.name} onClick={()=>handle(a.link,a.offset)} className="hover:cursor-pointer text-black font-medium">{a.name}</span>
 						)}

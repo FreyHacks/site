@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zoom } from 'react-reveal';
+import Zoom from 'react-reveal/Zoom';
 
 const Events = () => {
   return (
