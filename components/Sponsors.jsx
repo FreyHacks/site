@@ -93,10 +93,20 @@ const Sponsors = () => {
 <path d="M1415.94 121.152H1399.45C1394.54 121.158 1389.82 123.114 1386.35 126.59C1382.87 130.067 1380.92 134.781 1380.91 139.697V156.182C1380.91 156.729 1381.13 157.253 1381.51 157.639C1381.9 158.026 1382.42 158.243 1382.97 158.243C1392.26 158.233 1401.16 154.539 1407.73 147.971C1414.3 141.404 1417.99 132.5 1418 123.212C1418 122.666 1417.78 122.142 1417.4 121.755C1417.01 121.369 1416.49 121.152 1415.94 121.152Z" fill="#FFCB44"/>
 				</svg>
 			</div>
-			<div className='bg-gradient-to-b from-[#FFD463] to-[#FFE192] w-full h-[600px] -mt-0.5'>
+			<div className='bg-gradient-to-b from-[#FFD463] to-[#FFE192] w-full min-h-[600px] -mt-0.5'>
 					<p className='text-2xl sm:text-5xl font-bold text-center :-mt-10'>Our Sponsors</p>
-					<div>
-						sponsors list
+					<div className=' flex items-center justify-around flex-wrap gap-8 px-10 my-10 mx-auto'>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-1/4 h-40 bg-white '></div>
 					</div>
 			</div>
 			<div className='w-full'>
