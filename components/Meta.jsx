@@ -6,8 +6,8 @@ const Meta = () => {
     <Head>
         <html lang='en' />
         <meta charSet="UTF-8" />
-        <meta name="description" content="A student-led Hackathon held this summer where students from around the world can build impactful projects and level up on their skills and win exciting prizes." />
-        <meta property="og:description" content="A student-led Hackathon held this summer where students from around the world can build impactful projects and level up on their skills and win exciting prizes." />
+        <meta name="description" content= "FreyHacks, named after the Norse God of Summer, is a summer hackathon designed to introduce students from diverse backgrounds to the hackathon culture. FreyHacks is for students of all skill levels, and strives to create an inclusive, collaborative and empowering environment for novices and experienced developers alike." />
+        <meta property="og:description" content="FreyHacks, named after the Norse God of Summer, is a summer hackathon designed to introduce students from diverse backgrounds to the hackathon culture. FreyHacks is for students of all skill levels, and strives to create an inclusive, collaborative and empowering environment for novices and experienced developers alike." />
         <meta name="keywords" content="hackathon, students, technology, mlh" />
         <link rel="canonical" href="https://freyhacks.tech/" />
         <meta name='robots' content='all' />
