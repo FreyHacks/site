@@ -1,4 +1,5 @@
 import React from 'react';
+import data from '../lib/register';
 import Timer from "./Timer";
 
 const Hero = () => {
@@ -40,9 +41,9 @@ const Hero = () => {
 </defs>
 				</svg>
 
-					<button className='bg-gradient-to-b from-[#5BA558] hover:from-[#83C280] hover:to-[#5BA558] to-[#83C280] focus:ring-2 focus:ring-[#83C280] w-64 sm:w-[300px] h-20 rounded-3xl lg:mt-10 text-3xl text-white font-extrabold'>
+					{data.open?<a href={data.link} className='bg-gradient-to-b from-[#5BA558] hover:from-[#83C280] hover:to-[#5BA558] to-[#83C280] focus:ring-2 focus:ring-[#83C280] w-64 sm:w-[300px] h-20 rounded-3xl lg:mt-10 text-3xl text-white font-extrabold'>
 						Register
-					</button>
+					</a>:null}
 				</div>
 				<div className='sm:h-[700px] w-[75%] mt-10 lg:mt-3 sm:ml-20 flex flex-col items-end justify-end'>
 					<svg className='w-full'  viewBox="0 0 650 711" fill="none" xmlns="http://www.w3.org/2000/svg">

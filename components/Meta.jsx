@@ -17,7 +17,7 @@ const Meta = () => {
         <meta property="og:title" content="Freyhacks" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>FreyHacks</title>
-        <link rel="shortcut icon" href="./a.ico" />
+        <link rel="shortcut icon" href="/a.ico" type="image/x-icon"/>  
       </Head>
   )
 }

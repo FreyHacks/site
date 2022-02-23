@@ -96,17 +96,17 @@ const Sponsors = () => {
 			<div className='bg-gradient-to-b from-[#FFD463] to-[#FFE192] w-full min-h-[600px] -mt-0.5'>
 					<p className='text-2xl sm:text-5xl font-bold text-center :-mt-10'>Our Sponsors</p>
 					<div className=' flex items-center justify-around flex-wrap gap-8 px-10 my-10 mx-auto'>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
-						<div className='w-1/4 h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						<div className='w-[350px] h-40 bg-white '></div>
+						
 					</div>
 			</div>
 			<div className='w-full'>
