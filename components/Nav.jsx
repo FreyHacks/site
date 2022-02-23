@@ -1,3 +1,4 @@
+import data from '../lib/register'
 import React, { useState } from 'react';
 import {scroller} from 'react-scroll';
 
@@ -27,11 +28,11 @@ const Nav = () => {
             <path d="M41.1377 15.54V47.04C45.3706 47.04 49.43 45.3807 52.4231 42.427C55.4162 39.4733 57.0977 35.4672 57.0977 31.29C57.0977 27.1129 55.4162 23.1068 52.4231 20.1531C49.43 17.1994 45.3706 15.54 41.1377 15.54V15.54Z" fill="#FFE5A2"/>
           </svg>
         </div>
-        <nav className="md:flex w-[70%] md:w-[60%] lg:w-[45%] hidden  justify-between items-center font-semibold text-2xl align-middle">
+        <nav className={" md:flex  hidden  justify-between items-center font-semibold text-2xl align-middle "+(data.open?" w-[70%] md:w-[60%] lg:w-[45%]":"md:w-1/2 lg:w-[30%]")}>
           <span onClick={()=>handle("home")} className="text-black hover:cursor-pointer  w-20">Home</span>
           <span onClick={()=>handle("about")} className="text-black hover:cursor-pointer  w-20">About</span>
           <span onClick={()=>handle("events")} className="text-black  hover:cursor-pointer w-24">Schedule</span>
-          <button className=' bg-gradient-to-b from-[#66AD63] to-[#7FC07C]  text-medium font-medium  text-white rounded-2xl py-2 px-4 lg:px-7'>Register</button>
+          {data.open?<a href={data.link} className=' bg-gradient-to-b from-[#5BA558] hover:from-[#83C280] hover:to-[#5BA558] to-[#83C280] focus:ring-2 focus:ring-[#83C280]  text-medium font-medium  text-white rounded-2xl py-2 px-4 lg:px-7'>Register</a>:null}
         </nav>
         <div onClick={()=>setopen(!open)} className='block md:hidden h-10 w-10 '>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

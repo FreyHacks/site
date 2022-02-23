@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zoom } from 'react-reveal';
+import Zoom from 'react-reveal/Zoom';
 
 const Events = () => {
   return (
@@ -17,8 +17,8 @@ const Events = () => {
         </div>
         <p className='text-5xl font-bold'>Event Schedule</p>
       </div>
-      <div className='w-[83%] h-[475px] bg-white'>
-
+      <div className='w-[83%] h-[475px] bg-white flex items-center'>
+        <p className='w-full text-center text-2xl font-medium'>Coming Soon...</p>
       </div>
     </div>
     </Zoom>
