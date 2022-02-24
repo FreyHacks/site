@@ -1,7 +1,5 @@
 import Nav from './Nav.jsx';
 import Main from './Main.jsx';
-import Meta from './Meta.jsx';
-
 
 const AppWrapper = () => {
 
