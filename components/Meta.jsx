@@ -4,7 +4,6 @@ import Head from "next/head";
 const Meta = () => {
   return (
     <Head>
-      <html lang="en" />
       <meta charSet="UTF-8" />
       <meta
         name="description"
