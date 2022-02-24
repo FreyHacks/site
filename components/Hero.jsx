@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div id='home' className='w-full mt-1 mb-3 sm:my-1'>
 			<div className='flex flex-col lg:flex-row  items-center mt-10 sm:mt-0'>
-				<div  className='w-[70%] lg:w-[50%] xl:-mr-40 flex flex-col sm:flex-row lg:flex-col items-center lg:ml-4 lg:-mt-28 xl:-mt-64 '>
+				<div  className={'w-[70%] lg:w-[50%] xl:-mr-40 flex flex-col  items-center lg:ml-4 lg:-mt-28 xl:-mt-64 '+(data.open?" md:flex-row lg:flex-col":null)}>
 					<svg className='w-[80%] lg:h-[350px] mb-4 2xl:w-3/4 ' viewBox="0 0 411 268" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path opacity="0.4" d="M197.5 211C246.377 211 286 171.377 286 122.5C286 73.6228 246.377 34 197.5 34C148.623 34 109 73.6228 109 122.5C109 171.377 148.623 211 197.5 211Z" fill="#FFCF68"/>
 	<path opacity="0.2" d="M197 268C271.006 268 331 208.006 331 134C331 59.9939 271.006 0 197 0C122.994 0 63 59.9939 63 134C63 208.006 122.994 268 197 268Z" fill="#F0B16A"/>
