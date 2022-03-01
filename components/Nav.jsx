@@ -1,21 +1,26 @@
 import data from '../lib/register'
 import React, { useState } from 'react';
 import {scroller} from 'react-scroll';
+import { useRouter } from 'next/router';
 
-const Nav = () => {
+const Nav = ({r}) => {
   const [open, setopen] = useState(false);
+  const router=useRouter()
   const handle=(a)=>{
-    console.log(1)
-    scroller.scrollTo(a, {
-      duration: 1500,
-      delay: 100,
-      smooth: true,
-      containerId:'contain'
-    })
-    setopen(false);
+    if (r){
+      router.push(`/#${a}`)
+    }else{
+      scroller.scrollTo(a, {
+        duration: 1500,
+        delay: 100,
+        smooth: true,
+        containerId:'contain'
+      })
+      setopen(false);
+    }
   }
   return (
-    <div  className='z-[99999] fixed sm:static w-full'>
+    <div  className='z-[99999] fixed sm:static w-full h-20'>
       <div className='bg-white relative w-full flex justify-between items-center pr-8 py-1 sm:py-3'>
         <div className='w-[50%] md:w-[40%] my-2 sm:my-0 flex pl-5 items-center justify-start '>
           <svg width="300" height="60" viewBox="0 0 319 73" fill="none" xmlns="http://www.w3.org/2000/svg">
