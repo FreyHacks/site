@@ -99,14 +99,11 @@ const Register = () => {
           <p className='w-full text-center text-white font-extrabold text-5xl mt-24 sm:mt-16 mb-20 xl:mb-32'>Thanks for registering!</p>
           <div className='w-full flex flex-col items-center'>
             <p className='text-white font-medium w-3/4 my-1'>Follow the next steps below:</p>
-            <a href={data.discord} className='hover:cursor-pointer flex bg-white shadow-xl w-3/4 mb-6 xl:mb-8  rounded-xl p-4 items-center'>
-              <img className='w-14 h-14' src='/discord.webp'/>
-              <p className='font-medium ml-4 xl:text-xl'>Join the Discord here! </p>
-            </a>
-            <a href={data.devpost} className='hover:cursor-pointer flex bg-white shadow-xl w-3/4 mb-6  rounded-xl p-4 items-center'>
-              <img className='w-16 h-14' src='/devpost.webp'/>
-              <p className='font-medium ml-4 xl:text-xl'>Register on Devpost here!  </p>
-            </a>
+            {data.map(a=>(a.visible?
+            <a key={a.link} href={a.link} className='hover:cursor-pointer flex bg-white shadow-xl w-3/4 mb-6  rounded-xl p-4 items-center'>
+              <img className='w-16 h-14' src={a.logo}/>
+              <p className='font-medium ml-4 xl:text-xl'>{a.info}</p>
+            </a>:null))}
           </div>
         </div>
       </div>
