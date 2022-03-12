@@ -101,7 +101,7 @@ const Register = () => {
             <p className='text-white font-medium w-3/4 my-1'>Follow the next steps below:</p>
             {data.map(a=>(a.visible?
             <a key={a.link} href={a.link} className='hover:cursor-pointer flex bg-white shadow-xl w-3/4 mb-6  rounded-xl p-4 items-center'>
-              <img className='w-16 h-14' src={a.logo}/>
+              <img className='w-14 h-14' src={a.logo}/>
               <p className='font-medium ml-4 xl:text-xl'>{a.info}</p>
             </a>:null))}
           </div>
