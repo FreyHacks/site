@@ -26,7 +26,8 @@ const Meta = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>FreyHacks | Hackathon </title>
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-      </React.Fragment>
+      <meta name="google-site-verification" content="7QQm_iCP_rxI3zjNuyAaucCKJjtGcO7WGayxK37VbEU" />
+    </React.Fragment>
   );
 };
 
