@@ -1,4 +1,24 @@
 @tailwind base;
+@layer base {
+  h2 {
+    @apply text-3xl my-8 font-bold;
+  }
+  h3 {
+    @apply text-2xl my-6 font-bold;
+  }
+  h4 {
+    @apply text-xl my-5 font-medium;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+  ul{
+    @apply list-disc pl-10
+  }
+  p{
+    @apply my-3
+  }
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -45,3 +65,4 @@ a {
     flex-direction: column;
   }
 }
+

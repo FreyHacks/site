@@ -10,7 +10,7 @@ const Registered = () => {
         <Nav r={true}/>
         <Register/>
       </div>
-      <Footer/>
+      <Footer r={true}/>
     </div>
   )
 }

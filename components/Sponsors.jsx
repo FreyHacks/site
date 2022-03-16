@@ -99,14 +99,6 @@ const Sponsors = () => {
 						<div className='w-[350px] h-40 bg-white '></div>
 						<div className='w-[350px] h-40 bg-white '></div>
 						<div className='w-[350px] h-40 bg-white '></div>
-						<div className='w-[350px] h-40 bg-white '></div>
-						<div className='w-[350px] h-40 bg-white '></div>
-						<div className='w-[350px] h-40 bg-white '></div>
-						<div className='w-[350px] h-40 bg-white '></div>
-						<div className='w-[350px] h-40 bg-white '></div>
-						<div className='w-[350px] h-40 bg-white '></div>
-						<div className='w-[350px] h-40 bg-white '></div>
-						
 					</div>
 			</div>
 			<div className='w-full'>

@@ -1,15 +1,22 @@
 import React from 'react';
 import data from "../lib/footer"
 import { scroller } from 'react-scroll';
-const Footer = () => {
+import { useRouter } from 'next/router';
+
+
+const Footer = ({r}) => {
+	const router=useRouter()
 	const handle=(a,b)=>{
-    scroller.scrollTo(a, {
+		if (r){
+      a==='privacy'?router.push('/privacy'):router.push(`/#${a}`)
+    }else{
+			a==='privacy'?router.push('/privacy'):scroller.scrollTo(a, {
       duration: 1500,
       delay: 100,
       smooth: true,
       containerId:'contain',
 			offset: a==='sponsors' ? 400 : 50,
-    })
+    })}
   }
 	return (
 		<footer className='min-h-48 w-full pt-6 flex justify-around items-center flex-col md:flex-row text-black font-sans bg-white body-font text-xl'>
@@ -27,12 +34,12 @@ const Footer = () => {
 			<div className='flex justify-between flex-col md:flex-row flex-wrap w-[55%] items-center lg:items-start md:text-left text-center mt-1 sm:mt-0'>
 				<div className="w-full md:w-[50%] lg:w-[28%]">
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Socials</h1>
-					<ul className="list-none mb-10">
-						{data.socials.map(a=><li key={a.name}>
+					<div className="list-none w-full mb-10">
+						{data.socials.map(a=><div key={a.name}>
 							<a href={a.link} className="hover:cursor-pointer text-black font-medium">{a.name}</a>
-						</li>)}
+						</div>)}
 						
-					</ul>
+					</div>
 				</div>
 				<nav className="w-full md:w-[50%] lg:w-[28%]">
 					<h1 className="title-font font-bold text-black  text-2xl mb-3">Navigation</h1>
@@ -44,11 +51,11 @@ const Footer = () => {
 				</nav>
 				<nav className="w-full md:w-[50%] lg:w-[28%]">
 					<h1 className="title-font font-bold text-black text-2xl mb-3">Contact Us</h1>
-					<ul className="list-none mb-10">
-						{data.contact.map(a=><li key={a}>
+					<div className="list-none mb-10">
+						{data.contact.map(a=><div key={a}>
 							<span  className="text-black text-center font-medium text-xl">{a}</span>
-						</li>)}
-					</ul>
+						</div>)}
+					</div>
 				</nav>
 			</div>
 	</footer>

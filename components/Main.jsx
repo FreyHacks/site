@@ -18,7 +18,7 @@ const Main = () => {
         <Element name='events' className='w-full flex-col flex items-center'> <Events/></Element>
         <Element name='sponsors' className='w-full flex-col flex items-center'> <Sponsors/></Element>
         <Faq/>
-        <Footer/>
+        <Footer r={false}/>
       </div>
   );
 };
