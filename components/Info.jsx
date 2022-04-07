@@ -7,7 +7,7 @@ const Info = () => {
     <div  id='about' className=' w-[80%] sm:w-[70%] mt-10 sm:mt-20 py-4 text-lg'>
 			{data.map(a=><Fade key={a.head} {...a.props}><div   className={'w-full min-h-40 flex flex-col justify-around items-center mb-12 md:space-x-3 '+a.classes}>
 				<div className='w-[300px]   mb-6 flex-none '>
-					{a.svg}
+					<object  data={`svg/${a.svg}.svg`} /> 
 				</div>
 				<div className='flex flex-col align-middle flex-grow'>
 					<h2 className='w-full mb-2 text-3xl font-bold'>{a.head}</h2>
