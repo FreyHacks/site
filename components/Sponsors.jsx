@@ -14,12 +14,10 @@ const Sponsors = () => {
 			<div className='w-full '>  
 				<object   className='w-[140%] -ml-28 sm:ml-0 sm:w-full' data='svg/sponsor1.svg' /> 
 			</div>
-			<div className='bg-gradient-to-b from-[#FFD463] to-[#FFE192] w-full min-h-[600px] -mt-1'>
+			<div className='bg-gradient-to-b from-[#FFD463] to-[#FFE192] w-full min-h-[600px] -mt-1.5 xl:-mt-7'>
 					<p className='text-2xl sm:text-5xl font-bold text-center :-mt-10'>Our Sponsors</p>
 					<div className=' flex items-center justify-around flex-wrap gap-8 px-10 my-10 mx-auto'>
 						{data.map((a,n)=><a key={n} href={a.link} className='w-[350px]'><object  data={`svg/${a.svg}.svg`}  width="100%"> </object></a>)}
-						<div className='w-[350px] h-40 bg-white '></div>
-						<div className='w-[350px] h-40 bg-white '></div>
 					</div>
 			</div>
 			<div className='w-full'>

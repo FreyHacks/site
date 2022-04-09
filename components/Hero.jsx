@@ -14,8 +14,8 @@ const Hero = () => {
 						Register
 					</a>:null}
 				</div>
-				<div className='sm:h-[700px] w-[75%] mt-10 lg:mt-3 sm:ml-20 flex flex-col items-end justify-end'>
-						<object className='w-full'  data="svg/boat.svg"   /> 
+				<div className='sm:h-[670px] w-[75%] mt-10 lg:mt-3 sm:ml-20 flex flex-col items-center justify-end'>
+						<object  data="svg/boat.svg"  className='w-[90%] md:w-3/4'/> 
 				</div>
 			</div>
 			<div className='w-full -mt-[25%] md:-mt-[150px] lg:-mt-[14%]  flex items-center'>
