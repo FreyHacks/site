@@ -79,7 +79,7 @@ const Privacy = () => {
       <p>For any questions or concerns regarding your privacy, you may contact us using the following details: </p>
       <p>FreyHacks Team<br />
       hi@freyhacks.tech </p>
-      <Footer r={true}/>
+      <Footer external={true}/>
     </div>
   )
 }

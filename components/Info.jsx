@@ -1,6 +1,5 @@
 import  Fade from "react-reveal/Fade";
 import data from "../lib/about.js"
-
 const Info = () => {
 
   return (

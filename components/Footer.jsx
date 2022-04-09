@@ -4,10 +4,10 @@ import { scroller } from 'react-scroll';
 import { useRouter } from 'next/router';
 
 
-const Footer = ({r}) => {
+const Footer = ({external}) => {
 	const router=useRouter()
 	const handle=(a,b)=>{
-		if (r){
+		if (external){
       a==='privacy'?router.push('/privacy'):router.push(`/#${a}`)
     }else{
 			a==='privacy'?router.push('/privacy'):scroller.scrollTo(a, {

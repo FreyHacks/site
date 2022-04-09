@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import {scroller} from 'react-scroll';
 import { useRouter } from 'next/router';
 
-const Nav = ({r}) => {
+const Nav = ({external}) => {
   const [open, setopen] = useState(false);
   const router=useRouter()
   const handle=(a)=>{
-    if (r){
+    if (external){
       router.push(`/#${a}`)
     }else{
       scroller.scrollTo(a, {
