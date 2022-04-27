@@ -21,7 +21,7 @@ const Footer = ({external}) => {
 	return (
 		<footer className='min-h-48 w-full pt-6 flex flex-col justify-center items-center  bg-white'>
 			<div className=' w-full  flex justify-around items-center flex-col md:flex-row text-black font-sans  text-xl'>
-				<div className='w-[80%] md:w-[30%] lg:w-[20%] mt-6 mb-4 sm:my-1 flex flex-col items-center'>
+				<div className='w-[80%] md:w-[target="_blank"%] lg:w-[20%] mt-6 mb-4 sm:my-1 flex flex-col items-center'>
 				<object  data="svg/logo.svg" /> 
 				</div>
 				<div className='flex justify-between flex-col md:flex-row flex-wrap w-[55%] items-center lg:items-start md:text-left text-center mt-1 sm:mt-0'>
@@ -29,7 +29,7 @@ const Footer = ({external}) => {
 						<h1 className="title-font font-bold text-black  text-2xl mb-3">Socials</h1>
 						<div className="list-none w-full mb-10">
 							{data.socials.map(a=><div key={a.name}>
-								<a href={a.link} className="hover:cursor-pointer text-black font-medium">{a.name}</a>
+								<a target="_blank" href={a.link} className="hover:cursor-pointer text-black font-medium">{a.name}</a>
 							</div>)}
 							
 						</div>
@@ -53,9 +53,10 @@ const Footer = ({external}) => {
 				</div>
 			</div>
 			<div className='flex space-x-8 items-center pb-4'>
-				<a href='https://bank.hackclub.com/'><object data="svg/hackclubbank.svg" height="40"> </object></a>
-				<a href='https://www.vercel.com'><object  data="svg/vercel.svg"  height="30"> </object></a>
+				<a target="_blank" href='https://bank.hackclub.com/'><img src="svg/poweredbyhcb.svg" className='h-10'/></a>
+				<a target="_blank" href='https://www.vercel.com/?utm_source=freyhacks&utm_campaign=oss'><img  src="svg/vercel.svg" className='h-10'/></a>
 			</div>
+			<p className='text-gray-500 text-sm'>FreyHacks is fiscally sponsored by Hack Club, a 501(c)(3) nonprofit. Our registered EIN is 81-2908499</p>
 		</footer>
 	);
 };

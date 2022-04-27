@@ -19,7 +19,7 @@ const Meta = () => {
       <meta property="og:url" content="https://www.freyhacks.tech/" />
       <meta
         property="og:image"
-        content="https://www.freyhacks.tech/logo.png"
+        content="https://www.freyhacks.tech/sqlogo.png"
       />
       <meta property="og:title" content="Freyhacks" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
