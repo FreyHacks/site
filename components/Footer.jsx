@@ -56,7 +56,7 @@ const Footer = ({external}) => {
 				<a target="_blank" href='https://bank.hackclub.com/'><img src="svg/poweredbyhcb.svg" className='h-10'/></a>
 				<a target="_blank" href='https://www.vercel.com/?utm_source=freyhacks&utm_campaign=oss'><img  src="svg/vercel.svg" className='h-10'/></a>
 			</div>
-			<p className='text-gray-500 text-sm'>FreyHacks is fiscally sponsored by Hack Club, a 501(c)(3) nonprofit. Our registered EIN is 81-2908499</p>
+			<p className='text-gray-500 text-sm w-full text-center'>FreyHacks is fiscally sponsored by Hack Club, a 501(c)(3) nonprofit. Our registered EIN is 81-2908499</p>
 		</footer>
 	);
 };
