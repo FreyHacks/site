@@ -1670,11 +1670,6 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-on-images-loaded@^2.2.7:
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/react-on-images-loaded/-/react-on-images-loaded-2.2.7.tgz#5404fdbdc0d541799f83a2e03243212ac009caf9"
-  integrity sha512-oS7G8TIyAe6aAKu3cKUbf8dq77YIEGNIq1wxw9uDJB97beQ4i0NGqwSrc8ki+kkTT0cd3VtxvqbuY1xS7wDEeQ==
-
 react-reveal@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/react-reveal/-/react-reveal-1.2.2.tgz#f47fbc44debc4c185ae2163a215a9e822c7adfef"
