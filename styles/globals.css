@@ -40,8 +40,6 @@ a {
   box-sizing: border-box;
 }
 
-
-
 @media (min-width: 1024px){
   .lg\:flex-row-reverse {
       flex-direction: row-reverse;
@@ -66,3 +64,27 @@ a {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .navigation {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 100vw;
+    height: 5vh;
+    background: #fff;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navigation.open {
+    opacity: 100%;
+  }
+
+  .navigation > * {
+    padding: 10px;
+  }
+}

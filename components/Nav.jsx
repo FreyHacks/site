@@ -1,48 +1,68 @@
-import data from '../lib/register'
-import React, { useState } from 'react';
-import {scroller} from 'react-scroll';
-import { useRouter } from 'next/router';
+import data from "../lib/register";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import { scroller } from "react-scroll";
+import { useRouter } from "next/router";
+import LogoSvg from "../public/svg/logo.svg";
 
-const Nav = ({external}) => {
+const Nav = ({ external }) => {
   const [open, setopen] = useState(false);
-  const router=useRouter()
-  const handle=(a)=>{
-    if (external){
-      router.push(`/#${a}`)
-    }else{
+  const router = useRouter();
+  const handle = (a) => {
+    if (external) {
+      router.push(`/#${a}`);
+    } else {
       scroller.scrollTo(a, {
         duration: 1500,
         delay: 100,
         smooth: true,
-        containerId:'contain'
-      })
+        containerId: "contain",
+      });
       setopen(false);
     }
-  }
+  };
+
+  const links = [
+    { name: "Home", onClick: () => handle("home") },
+    { name: "About", onClick: () => handle("about") },
+    { name: "Schedule", onClick: () => handle("scheduled") },
+    {
+      name: (
+        <a
+          href={data.link}
+          className=" bg-gradient-to-b from-[#5BA558] hover:from-[#83C280] hover:to-[#5BA558] to-[#83C280] focus:ring-2 focus:ring-[#83C280]  text-medium font-medium  text-white rounded py-2 px-4 lg:px-7"
+        >
+          Register
+        </a>
+      ),
+      onClick: undefined,
+    },
+  ];
+
   return (
-    <div  className='z-[99999] fixed sm:static w-full h-20'>
-      <div className='bg-white relative w-full flex justify-between items-center pr-8 py-1 sm:py-3'>
-        <div className='w-[50%] md:w-[40%] my-2 sm:my-0 flex pl-5 items-center justify-start '>
-          <object  data="svg/logo.svg" width="300" height="60"/> 
+    <nav className="flex space-x-4 w-[100vw] z-[999] relative sticky top-0 items-center bg-white py-3 px-2 md:px-4 lg:px-10 xl:px-16 2xl:px-20 min-h-12">
+      <Image alt="FreyHacks" src={LogoSvg} className="max-w-20 max-h-12" />
+        <div
+          className="md:hidden w-5 h-8 flex flex-col justify-evenly"
+          onClick={() => setopen(!open)}
+        >
+          <span className="w-5 h-1 bg-black"></span>
+          <span className="w-5 h-1 bg-black"></span>
+          <span className="w-5 h-1 bg-black"></span>
         </div>
-        <nav className={" md:flex  hidden  justify-between items-center font-semibold text-2xl align-middle "+(data.open?" w-[70%] md:w-[60%] lg:w-[45%]":"md:w-1/2 lg:w-[30%]")}>
-          <span onClick={()=>handle("home")} className="text-black hover:cursor-pointer  w-20">Home</span>
-          <span onClick={()=>handle("about")} className="text-black hover:cursor-pointer  w-20">About</span>
-          <span onClick={()=>handle("events")} className="text-black  hover:cursor-pointer w-24">Schedule</span>
-          {data.open?<a href={data.link} className=' bg-gradient-to-b from-[#5BA558] hover:from-[#83C280] hover:to-[#5BA558] to-[#83C280] focus:ring-2 focus:ring-[#83C280]  text-medium font-medium  text-white rounded-2xl py-2 px-4 lg:px-7'>Register</a>:null}
-        </nav>
-        <div onClick={()=>setopen(!open)} className='block md:hidden h-10 w-10 '>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/>
-        </svg>
-        </div >
-        <nav className={'bg-white text-center text-black text-xl font-medium absolute top-20 right-0 flex py-4 items-center justify-around w-full '+(open?' block ':' hidden')}>
-          <span onClick={()=>handle("home")} >Home</span>
-          <span onClick={()=>handle("about")} >About</span>
-          <span onClick={()=>handle("events")} >Schedule</span>
-        </nav>
+      <div
+        className={`navigation md:flex items-center lg:text-xl xl:text-2xl m-0 space-x-8 ${
+          open ? "open" : ""
+        }`}
+      >
+        {links.map((link) => (
+          <a key={link.name} onClick={link.onClick} className="cursor-pointer">
+            {link.name}
+          </a>
+        ))}
       </div>
-    </div>
+    </nav>
   );
 };
 
