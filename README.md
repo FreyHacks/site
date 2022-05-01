@@ -1,5 +1,5 @@
 <!-- markdownlint-disable-next-line -->
-<div align="center"><img height="100px" width="100px" src="https://github.com/freyhacks.png"><br><h1>FreyHacks</h1><h5>A 48 hour Hackathon for students of all skill levels 🤗</h5><a href="https://freyhacks.tech"><img alt="View-Deployed" src="https://img.shields.io/badge/View-Deployed-green"></a><br><p><img src="https://user-images.githubusercontent.com/91655303/166135819-c67a1b4a-d80f-4224-9540-9d8fe056a465.png" height="400"></p></div>
+<div align="center"><img height="100px" width="100px" src="https://github.com/freyhacks.png"><br><h1>FreyHacks</h1><h5>A 48 hour Hackathon for students of all skill levels 🤗</h5><a href="https://freyhacks.tech"><img alt="View-Deployed" src="https://img.shields.io/badge/View-Deployed-green"></a><br><p><img src="https://user-images.githubusercontent.com/91655303/166135819-c67a1b4a-d80f-4224-9540-9d8fe056a465.png" height="400"></p><p><a href="https://vercel.com"><img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"></a></p></div>
 
 ## 🚀 Get It Running Quick
 
