@@ -78,10 +78,12 @@ a {
     z-index: 9999;
     opacity: 0;
     pointer-events: none;
+    transition: all;
   }
 
   .navigation.open {
     opacity: 100%;
+    pointer-events: auto;
   }
 
   .navigation > * {
