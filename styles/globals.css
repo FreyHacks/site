@@ -63,30 +63,3 @@ a {
     flex-direction: column;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .navigation {
-    margin: 0 !important;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 0px;
-    top: 100%;
-    width: 100vw;
-    height: 5vh;
-    background: #fff;
-    z-index: 9999;
-    opacity: 0;
-    pointer-events: none;
-    transition: all;
-  }
-
-  .navigation.open {
-    opacity: 100%;
-    pointer-events: auto;
-  }
-
-  .navigation > * {
-    padding: 10px;
-  }
-}
