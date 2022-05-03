@@ -1,7 +1,16 @@
+import { useEffect } from 'react';
+import splitbee from '@splitbee/web';
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => {
+  useEffect(() => {
+    splitbee.init({
+      scriptUrl: '/sb.js',
+      apiUrl: '/_hive'
+    });
+  });
 
-export default MyApp
+  return <Component {...pageProps} />;
+};
+
+export default App;

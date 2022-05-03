@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../lib/register';
 import Timer from "./Timer";
+import { trackEvent } from "../utils/analytics"
 
 const Hero = () => {
 	
@@ -10,7 +11,7 @@ const Hero = () => {
 				<div  className={'w-[70%] lg:w-[50%] xl:-mr-40 flex flex-col  items-center lg:ml-4 lg:-mt-28 xl:-mt-64 '+(data.open?" md:flex-row lg:flex-col":null)}>
 					<object className='w-[80%] lg:h-[350px] mb-4 2xl:w-3/4 '  data="svg/herologo.svg"   /> 
 					{data.open?
-					<a href={data.link} className='xl:-ml-9 bg-gradient-to-b from-[#5BA558] flex flex-col items-center justify-center  hover:from-[#83C280] hover:to-[#5BA558] to-[#83C280] focus:ring-2 focus:ring-[#83C280] w-[200px] sm:w-[300px] h-16 sm:h-20 rounded-3xl lg:mt-10 text-3xl text-white font-extrabold'>
+					<a onClick={trackEvent("Click register button")} href={data.link} className='xl:-ml-9 bg-gradient-to-b from-[#5BA558] flex flex-col items-center justify-center  hover:from-[#83C280] hover:to-[#5BA558] to-[#83C280] focus:ring-2 focus:ring-[#83C280] w-[200px] sm:w-[300px] h-16 sm:h-20 rounded-3xl lg:mt-10 text-3xl text-white font-extrabold'>
 						Register
 					</a>:null}
 				</div>
