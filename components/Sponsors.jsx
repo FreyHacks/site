@@ -17,7 +17,7 @@ const Sponsors = () => {
 			<div className='bg-gradient-to-b from-[#FFD463] to-[#FFE192] w-full min-h-[600px] -mt-1.5 xl:-mt-7'>
 					<p className='text-2xl sm:text-5xl font-bold text-center :-mt-10'>Our Sponsors</p>
 					<div className=' flex items-center justify-around flex-wrap gap-8 px-10 my-10 mx-auto'>
-						{data.map((a,n)=><a key={n} href={a.link} target="_blank" className='w-[350px] z-10 flex flex-col items-center '><img  className='-z-10 '  src={`svg/${a.svg}`}  width="90%"/></a>)}
+						{data.map((a,n)=><a key={n} href={a.link} target="_blank" className='w-[150px] sm:w-[350px] z-10 flex flex-col items-center '><img  className='-z-10 '  src={`svg/${a.svg}`}  width="90%"/></a>)}
 					</div>
 			</div>
 			<div className='w-full'>

@@ -9,19 +9,10 @@ import { Element } from "react-scroll";
 
 const Main = () => {
   return (
-    <div className=" bg-transparent subpixel-antialiased h-full w-full mt-14 sm:mt-0 flex flex-col items-center pt-0 sm:pt-10">
-      <a
+    <div className=" bg-transparent relative subpixel-antialiased w-full  flex flex-col items-center mt-1">
+       <a
         id="mlh-trust-badge"
-        style={{
-          display: "block",
-          maxWidth: "100px",
-          minWidth: "60px",
-          position: "fixed",
-          top: "84px",
-          width: "10%",
-          zIndex: "10000",
-        }}
-        className="right-[30px] md:right-[65px]"
+        className="sticky -mr-[80%]  max-w-[100px] min-w-[60px] w-[10%] top-[84px] sm:top-0 z-[100]"
         rel="noopener noreferrer"
         href="https://mlh.io/seasons/2022/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=yellow"
         target="_blank"
@@ -32,7 +23,7 @@ const Main = () => {
           style={{ width: "100%" }}
         />
       </a>
-      <Element name="home" className="w-full flex-col flex items-center">
+      <Element name="home" className="w-full flex-col flex items-center -mt-[100px] sm:-mt-[20%] lg:-mt-[10%]">
         <Hero />
       </Element>
       <Element name="about" className="w-full flex-col flex items-center">

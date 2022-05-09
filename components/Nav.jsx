@@ -20,7 +20,7 @@ const Nav = ({external}) => {
     }
   }
   return (
-    <div  className='z-[99999] sticky top-0 w-full h-20'>
+    <div  className='z-[99999] sticky top-0 sm:static w-full h-20'>
       <div className='bg-white relative w-full flex justify-between items-center pr-8 py-1 sm:py-3'>
         <div className='w-[50%] md:w-[40%] my-2 sm:my-0 flex pl-5 items-center justify-start '>
           <object  data="svg/logo.svg" width="300" height="60"/> 
