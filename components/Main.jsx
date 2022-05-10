@@ -23,7 +23,7 @@ const Main = () => {
           style={{ width: "100%" }}
         />
       </a>
-      <Element name="home" className="w-full flex-col flex items-center -mt-[100px] sm:-mt-[20%] lg:-mt-[10%]">
+      <Element name="home" className="w-full flex-col flex items-center -mt-[100px] sm:-mt-[50px] lg:-mt-[70px]">
         <Hero />
       </Element>
       <Element name="about" className="w-full flex-col flex items-center">
