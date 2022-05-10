@@ -40,6 +40,7 @@ const Footer = ({external}) => {
 						{data.nav.map(a=>
 								<span key={a.name} onClick={()=>handle(a.link,a.offset)} className="hover:cursor-pointer text-black font-medium">{a.name}</span>
 							)}
+                                                        <span onClick={()=>window.open("https://static.mlh.io/docs/mlh-code-of-conduct.pdf","_blank")} className="hover:cursor-pointer text-black font-medium">Code of Conduct</span>
 						</div>
 					</nav>
 					<nav className="w-full md:w-[50%] lg:w-[28%]">
