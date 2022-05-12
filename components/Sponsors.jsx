@@ -31,7 +31,7 @@ const Sponsors = () => {
 			{classes.map(a=><object key={a} className={'absolute w-[18px] sm:w-[33px] '+a}  data='svg/star.svg' /> )}
 			
     </div>
-    );
+    ); 
 };
 
 export default Sponsors;
