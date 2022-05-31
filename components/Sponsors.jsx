@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../lib/sponsor.js';
+import datac from '../lib/communitypartner'
 const Sponsors = () => {
 	const classes=[
 		' top-[45%] right-[10%]',
@@ -22,6 +23,10 @@ const Sponsors = () => {
 					</div>
 					<div className=' flex items-center justify-around flex-wrap gap-x-8 gap-y-8 sm:gap-y-10 px-10 mb-10 mx-auto'>
 						{data.map((a,n)=>a.size==="sm"&&<a key={n} href={a.link} target="_blank" className=' z-10 flex flex-col items-center w-[44%] sm:w-[25%] xl:w-[20%]'><img  className='-z-10 '  src={`svg/${a.svg}`}  width="90%"/></a>)}
+					</div>
+					<p className='text-2xl sm:text-5xl font-bold text-center mt-20'>Our Community partners</p>
+					<div className=' flex items-center justify-around flex-wrap gap-x-8 gap-y-8 sm:gap-y-10 px-10 mt-10 mb-10 mx-auto'>
+						{datac.map((a,n)=><a key={n} href={a.link} target="_blank" className=' z-10 flex flex-col items-center w-[44%] sm:w-[25%] xl:w-[20%]'><img  className='-z-10 '  src={`svg/${a.svg}`}  width="90%"/></a>)}
 					</div>
 			</div>
 			<div className='w-full'>
