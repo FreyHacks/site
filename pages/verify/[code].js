@@ -36,7 +36,7 @@ export default function Verify() {
         /* if (!query.code) {
             window.location.replace('/');
         }*/
-        fetch(`/api/verify?code=${code}`)
+        fetch(`/api/verify/${code}`)
             .then((res) => {
                 if (!res.ok) {
                     setUserData({ "found": false, "data": {} });
