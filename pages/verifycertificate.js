@@ -6,8 +6,6 @@ import styles from '../styles/Verify.module.css';
 import { useRouter } from 'next/router';
 
 const participants = {
-    "Gyl": { "name": "Gyl", "role": "Mascot" },
-    "Kanha": { "name": "Kanha", "role": "Organizer" },
     "00001": { "name": "Samuel Larsen-Disney", "role": "Judge" },
     "00002": { "name": "Azamat Nurkhojayev", "role": "Judge" },
     "00003": { "name": "Danylo Tomalchov", "role": "Judge" },
