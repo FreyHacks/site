@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import EmptyNav from '../components/EmptyNav';
-import Footer from '../components/Footer';
+import EmptyNav from '../../components/EmptyNav';
+import Footer from '../../components/Footer';
 import { useEffect, useState } from 'react';
-import styles from '../styles/Verify.module.css';
-
+import styles from '../../styles/Verify.module.css';
+import { useRouter } from 'next/router';
 
 function UserDisplay(props) {
     console.log(props.data);
@@ -28,13 +28,15 @@ function UserDisplay(props) {
     }
 }
 
-export default function Verify({ query }) {
+export default function Verify() {
     const [userData, setUserData] = useState(null);
+    const router = useRouter();
+    const code = router.query.code;
     useEffect(() => {
-        if (!query.code) {
+        /* if (!query.code) {
             window.location.replace('/');
-        }
-        fetch(`/api/verify?code=${query.code}`)
+        }*/
+        fetch(`/api/verify?code=${code}`)
             .then((res) => {
                 if (!res.ok) {
                     setUserData({ "found": false, "data": {} });
@@ -45,7 +47,7 @@ export default function Verify({ query }) {
                     })
                 }
             });
-    }, [query.code]);
+    }, [code]);
     return (
         <div className={styles.container}>
             <Head>
@@ -66,7 +68,3 @@ export default function Verify({ query }) {
         </div>
     )
 }
-
-Verify.getInitialProps = ({ query }) => {
-    return { query };
-};
