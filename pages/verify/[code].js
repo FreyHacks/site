@@ -28,14 +28,13 @@ function UserDisplay(props) {
     }
 }
 
-export default function Verify() {
+export default function Verify(params) {
     const [userData, setUserData] = useState(null);
-    const router = useRouter();
-    const code = router.query.code;
+    const code = params.code;
     useEffect(() => {
-        /* if (!query.code) {
-            window.location.replace('/');
-        }*/
+        if (!code) {
+            return;
+        }
         fetch(`/api/verify/${code}`)
             .then((res) => {
                 if (!res.ok) {
@@ -67,4 +66,15 @@ export default function Verify() {
             <Footer />
         </div>
     )
+}
+
+export async function getStaticProps({ params }) {
+    return { props: params }
+}
+
+export async function getStaticPaths() {
+    return {
+        paths: [],
+        fallback: true
+    };
 }
