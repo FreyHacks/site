@@ -3,7 +3,7 @@ import { useTimer } from  "reactjs-countdown-hook";
 
 const d=()=>{
   var t1 = new Date();
-  var t2 = new Date(2022,5,24, 0, 0, 0, 0);
+  var t2 = new Date();
   var dif = t1.getTime() - t2.getTime();
   var Seconds_from_T1_to_T2 = dif / 1000;
   return Math.round(Math.abs(Seconds_from_T1_to_T2));
