@@ -28,9 +28,11 @@ function UserDisplay(props) {
     }
 }
 
-export default function Verify(params) {
+export default function Verify() {
     const [userData, setUserData] = useState(null);
-    const code = params.code;
+    const router = useRouter();
+    const code = router.query.code;
+    console.log(code);
     useEffect(() => {
         if (!code) {
             return;
@@ -66,15 +68,4 @@ export default function Verify(params) {
             <Footer />
         </div>
     )
-}
-
-export async function getStaticProps({ params }) {
-    return { props: params }
-}
-
-export async function getStaticPaths() {
-    return {
-        paths: [],
-        fallback: true
-    };
 }
