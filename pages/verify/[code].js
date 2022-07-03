@@ -32,7 +32,6 @@ export default function Verify() {
     const [userData, setUserData] = useState(null);
     const router = useRouter();
     const code = router.query.code;
-    console.log(code);
     useEffect(() => {
         if (!code) {
             return;

@@ -21,3 +21,13 @@ export default function handler(req, res) {
     res.status(200).json(participants[participantCode]);
   }
 }
+
+export function getStaticPaths() {
+  return {
+    paths: [
+      Object.keys(participants).map((code) => {
+        return { params: { code: code } };
+      })
+    ]
+  };
+}
