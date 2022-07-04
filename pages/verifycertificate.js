@@ -14,6 +14,8 @@ const participants = {
     "00006": { "name": "Andrey Sundukov", "role": "Judge" },
     "00007": { "name": "Maksym Mostovyi", "role": "Judge" },
     "00008": { "name": "Timofey Krestyanov", "role": "Judge" },
+    "00009": { "name": "Susmita Dey", "role": "Mentor" },
+    "00010": { "name": "Priyodarshinee Moitra", "role": "Mentor" }
 }
 
 function UserDisplay(props) {
