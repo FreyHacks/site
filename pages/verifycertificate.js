@@ -411,7 +411,7 @@ const participants = {
         "role": "Hacker"
     },
     "00102": {
-        "name": "Lazar Stojanović",
+        "name": "Lazar Stojanovi\u0107",
         "role": "Hacker"
     },
     "00103": {
@@ -811,10 +811,6 @@ const participants = {
         "role": "Hacker"
     },
     "00202": {
-        "name": "Mary Ann Jose",
-        "role": "Hacker"
-    },
-    "00203": {
         "name": "Shubhankar",
         "role": "Hacker"
     }
